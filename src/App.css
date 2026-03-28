@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Lato:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  background: linear-gradient(135deg, #d4fc79, #96e6a1, #a1c4fd);
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 4rem;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+header img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  padding: 3px;
+  background: linear-gradient(135deg, #2ecc71, #4fc3f7);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+header img:hover {
+  transform: scale(1.1) rotate(5deg);
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0;
+  color: #1b571e;
+  letter-spacing: 2px;
+}
+
+.live {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: rgb(0, 0, 0);
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background: #175e3b;
+  border-radius: 50%;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  50% {
+    opacity: 0.3;
+  }
+}
+
+.dashboard {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 25px;
+  padding: 20px 40px;
+}
+
+.main-card {
+  border-radius: 20px;
+  padding: 40px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  transition: 0.3s;
+}
+
+.main-card:hover {
+  transform: translateY(-6px) scale(1.02);
+}
+
+.icon {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.green {
+  border-left: 10px solid #229451;
+}
+
+.red {
+  border-left: 5px solid #ff5252;
+}
+
+.main-card h2 {
+  font-size: 2rem;
+  color: #2e2e2e;
+}
+
+.main-card p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.log-card {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.log-card h3 {
+  color: #2e7d32;
+  margin-bottom: 15px;
+}
+
+.log-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  transition: 0.2s;
+}
+
+.log-row:hover {
+  background: rgba(0, 0, 0, 0.05);
+  padding-left: 5px;
+}
