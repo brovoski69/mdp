@@ -1,4 +1,4 @@
-# Smart Waste Management System
+# Smart Waste Segregation System
 
 An IoT-based smart dustbin that automatically classifies waste as **biodegradable** or **non-biodegradable** using a hybrid ML approach (local YOLO model + Gemini cloud fallback) and physically sorts it via a servo-controlled flap mechanism. A real-time web dashboard displays classification results and logs.
 
